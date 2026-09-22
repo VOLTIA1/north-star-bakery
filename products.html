@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,6 +29,11 @@
     </header>
     <main>
         <h1>Our Products</h1>
+        
+        <section class="favorites">
+            <h2>My Favorites</h2>
+            <ul id="favorites-list"></ul>
+        </section>
 
         <section class="breads">
 
@@ -36,6 +42,9 @@
             <img src="media/bakery-bread_c.png" alt="Fresh loaves of crusty artisan bread on a wooden table">
             <p>Sourdough, whole wheat, and rye loaves baked daily from local flour.</p>
             <p>Price range: $5 – $9 per loaf</p>
+
+            <button type="button" class="fav-btn" data-product="Breads">Add to Favorites</button>
+
         </section>
 
         <section class="pastries">
@@ -44,12 +53,14 @@
 
             <p>Butter croissants, cinnamon rolls, and fruit danishes made by hand every morning.</p>
             <p>Price range: $3 - $6 each</p>
+            <button type="button" class="fav-btn" data-product="Pastries">Add to Favorites</button>
         </section>
 
         <section class="cakes">
             <h2>Cakes</h2>
             <p>Custom birthday and celebration cakes. Pre-order at least 3 days ahead.</p>
             <p>Price range: $25 - $60</p>
+            <button type="button" class="fav-btn" data-product="Cakes">Add to Favorites</button>
         </section>
     </main>
 
