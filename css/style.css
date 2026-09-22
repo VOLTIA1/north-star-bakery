@@ -6,6 +6,10 @@ body{
     background-color: #FFF8F0 ;
     color: #5C3D2E;
     font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 , h2 {
@@ -48,6 +52,7 @@ main{
     padding:1rem;
     max-width: 900px;
     margin: 0 auto;
+    flex: 1;
 }
 
 section {
