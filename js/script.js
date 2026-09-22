@@ -1,12 +1,16 @@
 // ===== Favorites feature (products page) =====
 let favorites = [];
+const products = ["Breads", "Pastries", "Cakes"];
 const favoritesList = document.getElementById("favorites-list");
+
 const favButtons = document.querySelectorAll(".fav-btn");
 
 function loadFavorites() {
     const saved = localStorage.getItem("favorites");
     if (saved) {
-        favorites = JSON.parse(saved);
+        favorites = JSON.parse(saved).filter(function (item) {
+            return products.includes(item);
+        });
     }
 }
 
